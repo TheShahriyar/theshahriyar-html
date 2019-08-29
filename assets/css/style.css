@@ -1,32 +1,5 @@
-/*
-Theme Name: Bonding
-Description: Bonding is a Personal Portfolio Template. Its a full responsive theme built with Bootstrap.
-Version: 1.0
-Author: TheShahriyar
-Author URI: http://theshahriyar.com
-*/
-/**==========================================**/
-/** Table of Content
-/**==========================================**/
-/**
-
-** Banner & Slideshow
-** Feature
-** Timeline Styling
-** Portfolio
-** Animated Number
-** Progress Bar
-** Testimonial Style
-** Pricing Table
-** Latest News
-** Video Background
-** Contact Page Style
-** Copyright
-** Back to Top
-
-**/
 body {
-  font-family: "Poppins", sans-serif;
+  font-family: "Open Sans", sans-serif;
   color: #333;
   font-size: 14px;
   line-height: 26px;
@@ -56,7 +29,7 @@ h1, h2, h3, h4, h5, h6 {
   padding: 0;
   font-weight: 600;
   color: #333;
-  font-family: "Poppins", sans-serif !important; }
+  font-family: "Open Sans", sans-serif !important; }
 
 img {
   max-width: 100%;
@@ -87,6 +60,7 @@ img {
 
 a {
   -webkit-transition: all 0.3s;
+  -o-transition: all 0.3s;
   transition: all 0.3s;
   text-decoration: none; }
   a:hover {
@@ -139,6 +113,7 @@ hr {
   -webkit-border-radius: 0;
   border-radius: 0;
   -webkit-transition: all 0.3s;
+  -o-transition: all 0.3s;
   transition: all 0.3s; }
 
 .btn-primary {
@@ -374,6 +349,7 @@ blockquote {
     color: #1cbac8; }
 
 .shadow {
+  -webkit-box-shadow: -25px 0 30px -15px rgba(0, 0, 0, 0.15), 25px 0 30px -15px rgba(0, 0, 0, 0.15);
   box-shadow: -25px 0 30px -15px rgba(0, 0, 0, 0.15), 25px 0 30px -15px rgba(0, 0, 0, 0.15); }
 
 /*------------------------------------------------*/
@@ -429,7 +405,6 @@ blockquote {
     -moz-transition: all .3s;
     -o-transition: all .3s;
     transition: all .3s; }
-
   .navbar-default .navbar-brand {
     font-size: 40px;
     color: #1cbac8;
@@ -437,11 +412,9 @@ blockquote {
     -moz-transition: all .3s;
     -o-transition: all .3s;
     transition: all .3s; }
-
   .navbar-default.navbar-bg {
     padding: 10px 0;
     background-color: #222; }
-
   .navbar-default.navbar-bg .nav li a {
     text-transform: uppercase;
     font-weight: 300;
@@ -449,30 +422,27 @@ blockquote {
     color: #fff;
     font-size: 12px;
     border: 2px solid transparent; }
-
   .navbar-default.navbar-bg .nav li a:hover,
   .navbar-default.navbar-bg .nav li a:focus {
     background: transparent;
     color: #1cbac8; }
-
   .navbar-default.navbar-bg .navbar-toggle:hover,
   .navbar-default.navbar-bg .navbar-toggle:focus {
     color: #1cbac8; }
-
   .navbar-default.navbar-bg .navbar-nav > .active > a {
     color: #1cbac8;
     background: transparent; }
-
   .navbar-default.navbar-bg .navbar-nav > .active > a:hover,
   .navbar-default.navbar-bg .navbar-nav > .active > a:focus {
     color: #1cbac8;
     color: #111; }
-
   .navbar-default.navbar-bg .navbar-brand {
     font-size: 1.5em; } }
+
 @media (max-width: 767px) {
   .navbar-default .navbar-collapse {
     background: #222; } }
+
 .preview-banner {
   padding: 200px 0; }
   .preview-banner h1 {
@@ -492,6 +462,36 @@ blockquote {
   .preview-banner.primary h1, .preview-banner.primary p {
     color: #1cbac8; }
 
+.about-section img {
+  width: 230px;
+  border-radius: 50%;
+  text-align: center;
+  display: inline-block; }
+
+.about-section .social-links {
+  text-align: center;
+  margin-top: 20px; }
+  .about-section .social-links li {
+    display: inline-block;
+    margin-right: 25px; }
+    .about-section .social-links li a {
+      color: #222;
+      font-size: 18px; }
+
+.about-text p {
+  font-size: 16px; }
+
+.skill-list {
+  margin-top: 30px; }
+  .skill-list li {
+    display: inline-block;
+    font-size: 20px;
+    margin-right: 20px;
+    margin-bottom: 10px;
+    color: #fe4157; }
+    .skill-list li:after {
+      content: ","; }
+
 .call-to-action-2 h3 {
   font-size: 52px;
   text-transform: uppercase;
@@ -501,10 +501,12 @@ blockquote {
     color: #1cbac8;
     text-transform: none;
     font-family: "Kaushan Script","Helvetica Neue",Helvetica,Arial,cursive !important; }
+
 .call-to-action-2 p {
   padding: 0 10%;
   margin-bottom: 40px;
   font-size: 16px; }
+
 .call-to-action-2.white h3, .call-to-action-2.white p {
   color: #fff; }
 
@@ -560,5 +562,6 @@ blockquote {
   color: #fff;
   text-transform: none;
   margin-bottom: 30px; }
+
 .footer-minimal a {
   color: #fff; }
