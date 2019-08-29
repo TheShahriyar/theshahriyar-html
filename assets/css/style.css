@@ -1,0 +1,564 @@
+/*
+Theme Name: Bonding
+Description: Bonding is a Personal Portfolio Template. Its a full responsive theme built with Bootstrap.
+Version: 1.0
+Author: TheShahriyar
+Author URI: http://theshahriyar.com
+*/
+/**==========================================**/
+/** Table of Content
+/**==========================================**/
+/**
+
+** Banner & Slideshow
+** Feature
+** Timeline Styling
+** Portfolio
+** Animated Number
+** Progress Bar
+** Testimonial Style
+** Pricing Table
+** Latest News
+** Video Background
+** Contact Page Style
+** Copyright
+** Back to Top
+
+**/
+body {
+  font-family: "Poppins", sans-serif;
+  color: #333;
+  font-size: 14px;
+  line-height: 26px;
+  font-weight: 400;
+  letter-spacing: .5px;
+  overflow-x: hidden;
+  text-rendering: optimizeLegibility !important;
+  -webkit-font-smoothing: antialiased !important; }
+
+#container {
+  background: #fff;
+  position: relative;
+  overflow-x: hidden;
+  margin: 0 auto; }
+
+ul, ol {
+  margin: 0;
+  padding: 0;
+  list-style: none; }
+
+.fa-ul {
+  margin-left: 22px; }
+
+h1, h2, h3, h4, h5, h6 {
+  text-transform: uppercase;
+  margin: 0;
+  padding: 0;
+  font-weight: 600;
+  color: #333;
+  font-family: "Poppins", sans-serif !important; }
+
+img {
+  max-width: 100%;
+  height: auto; }
+
+.text-left {
+  text-align: left; }
+
+.text-right {
+  text-align: right; }
+
+.text-center {
+  text-align: center; }
+
+.text-brand-color {
+  color: #1cbac8; }
+
+.img-center {
+  margin-left: auto;
+  margin-right: auto; }
+
+.circle {
+  -webkit-border-radius: 100%;
+  border-radius: 100%; }
+
+.white {
+  color: #fff !important; }
+
+a {
+  -webkit-transition: all 0.3s;
+  transition: all 0.3s;
+  text-decoration: none; }
+  a:hover {
+    text-decoration: none; }
+  a:focus {
+    text-decoration: none;
+    color: #333;
+    outline: 0; }
+
+::-moz-selection {
+  background: #1cbac8;
+  color: #fff;
+  text-shadow: none;
+  outline: none; }
+
+::selection {
+  background: #1cbac8;
+  color: #fff;
+  text-shadow: none;
+  outline: none; }
+
+.main-container {
+  overflow: hidden; }
+
+.dropcap {
+  font-size: 38px;
+  font-weight: 400;
+  line-height: 58px;
+  float: left;
+  width: 60px;
+  height: 60px;
+  padding: 0 10px 0 14px; }
+  .dropcap.bg {
+    margin-right: 25px;
+    margin-bottom: 0;
+    color: #ffffff;
+    background: #1cbac8;
+    text-align: center;
+    color: #fff; }
+  .dropcap.circle {
+    border-radius: 50%; }
+  .dropcap.rounded {
+    border-radius: 5px; }
+
+hr {
+  margin-top: 0;
+  margin-bottom: 0; }
+
+.btn {
+  -webkit-border-radius: 0;
+  border-radius: 0;
+  -webkit-transition: all 0.3s;
+  transition: all 0.3s; }
+
+.btn-primary {
+  color: #ffffff;
+  background: transparent;
+  font-size: 12px;
+  text-transform: uppercase;
+  border: 1px solid #fff;
+  -webkit-border-radius: 2px;
+  -moz-border-radius: 2px;
+  -o-border-radius: 2px;
+  border-radius: 2px;
+  padding: 8px 48px; }
+  .btn-primary:hover {
+    background: #1cbac8;
+    border-color: #1cbac8;
+    color: #fff; }
+  .btn-primary.white {
+    background: #fff;
+    color: #1cbac8 !important; }
+    .btn-primary.white:hover {
+      background: #24252a; }
+  .btn-primary.white-border {
+    border: 1px solid #ffffff; }
+    .btn-primary.white-border:hover {
+      background: #fff;
+      color: #1cbac8; }
+  .btn-primary.black-border {
+    border: 1px solid #222;
+    color: #222; }
+    .btn-primary.black-border:hover {
+      background: #1cbac8;
+      color: #fff;
+      border: 1px solid #1cbac8; }
+
+.right-half, .left-half {
+  position: absolute;
+  right: 0;
+  top: 0;
+  height: 100%;
+  background-position: center center;
+  background-size: cover; }
+  .right-half.width33, .left-half.width33 {
+    width: 33%; }
+  .right-half.width50, .left-half.width50 {
+    width: 50%; }
+
+.left-half {
+  left: 0; }
+
+.navbar-fixed-top {
+  position: fixed !important;
+  right: 0;
+  left: 0;
+  z-index: 1100;
+  -webkit-animation-name: fadeInDown;
+  animation-name: fadeInDown;
+  animation-duration: .8s;
+  -webkit-animation-duration: .8s;
+  animation-timing-function: ease-in-out;
+  -webkit-animation-timing-function: ease-in-out; }
+
+.mt60 {
+  margin-top: 60px; }
+
+.mt65 {
+  margin-top: 65px; }
+
+.mt30 {
+  margin-top: 30px; }
+
+.mt25 {
+  margin-top: 25px; }
+
+.mb15 {
+  margin-bottom: 15px; }
+
+.mb30 {
+  margin-bottom: 30px; }
+
+.mb40 {
+  margin-bottom: 40px; }
+
+.mb60 {
+  margin-bottom: 60px; }
+
+.mr10 {
+  margin-right: 10px; }
+
+.pad15 {
+  padding: 15px 0; }
+
+.pad30 {
+  padding: 30px 0; }
+
+.pad50 {
+  padding: 50px 0; }
+
+.pad60 {
+  padding: 60px 0; }
+
+.pad80 {
+  padding: 80px 0; }
+
+.pad100 {
+  padding: 100px 0; }
+
+.pad120 {
+  padding: 120px 0; }
+
+.pad-t100 {
+  padding-top: 100px; }
+
+.pad-t80 {
+  padding-top: 80px; }
+
+.pad-t30 {
+  padding-top: 30px; }
+
+.pad-t50 {
+  padding-top: 50px; }
+
+.pad-t60 {
+  padding-top: 60px; }
+
+.pad-t90 {
+  padding-top: 90px; }
+
+.pad-t120 {
+  padding-top: 120px; }
+
+.pad-b30 {
+  padding-bottom: 30px; }
+
+.pad-b40 {
+  padding-bottom: 40px; }
+
+.pad-b50 {
+  padding-bottom: 50px; }
+
+.pad-b60 {
+  padding-bottom: 60px; }
+
+.pad-b70 {
+  padding-bottom: 70px; }
+
+.pad-b80 {
+  padding-bottom: 80px; }
+
+.pad-b100 {
+  padding-bottom: 100px; }
+
+.section-title {
+  position: relative;
+  margin: 0 0 80px; }
+  .section-title h3 {
+    position: relative;
+    font-size: 35px;
+    line-height: 42px;
+    color: #333;
+    font-family: "Kaushan Script","Helvetica Neue",Helvetica,Arial,cursive !important;
+    text-transform: none; }
+    .section-title h3 span {
+      color: #1cbac8 !important; }
+    .section-title h3:after {
+      position: absolute;
+      right: 0;
+      bottom: 0;
+      left: 0;
+      width: 37px;
+      height: 1px;
+      margin: -20px auto;
+      content: '';
+      opacity: 1;
+      background: #333; }
+  .section-title p {
+    max-width: 840px;
+    margin: 40px auto 0; }
+  .section-title.white h3 {
+    color: #ffffff; }
+    .section-title.white h3:after {
+      background: #fff !important; }
+  .section-title.left h3:after {
+    left: 0;
+    right: 100%; }
+  .section-title.small {
+    margin: 0 0 40px; }
+    .section-title.small h3 {
+      font-size: 28px; }
+
+.footer-title h3 {
+  font-size: 17px;
+  text-transform: uppercase;
+  color: #ffffff;
+  position: relative;
+  margin-bottom: 20px; }
+
+blockquote {
+  padding: 12.5px 25px;
+  margin: 0 0 25px;
+  font-style: italic;
+  border-left: 3px solid #24252a; }
+  blockquote.primary {
+    border-left-color: #1cbac8; }
+  blockquote.ash-bg {
+    background-color: #f7f7f7; }
+
+.divider {
+  margin-top: 20px;
+  margin-bottom: 20px;
+  border-top: 1px solid #999; }
+  .divider.dotted {
+    border-top: 1px dotted #999; }
+  .divider.dashed {
+    border-top: 1px dashed #999; }
+
+.parallax {
+  background-repeat: no-repeat;
+  background-attachment: fixed;
+  background-position: 50% 0;
+  background-size: cover; }
+
+[class^="flaticon-"]:before,
+[class*=" flaticon-"]:before,
+[class^="flaticon-"]:after,
+[class*=" flaticon-"]:after {
+  margin-left: 0; }
+
+.fa-ul li {
+  padding: 5px 0; }
+  .fa-ul li .fa-li {
+    margin-top: 8px;
+    color: #1cbac8; }
+
+.shadow {
+  box-shadow: -25px 0 30px -15px rgba(0, 0, 0, 0.15), 25px 0 30px -15px rgba(0, 0, 0, 0.15); }
+
+/*------------------------------------------------*/
+/* Start Top Navbar Section                           */
+/*------------------------------------------------*/
+.navbar-default {
+  border-color: transparent;
+  background-color: #1cbac8; }
+
+.navbar-default .navbar-brand {
+  font-family: "Kaushan Script","Helvetica Neue",Helvetica,Arial,cursive;
+  color: #fff; }
+  .navbar-default .navbar-brand:hover, .navbar-default .navbar-brand:focus {
+    color: #1cbac8; }
+
+.navbar-default .navbar-collapse {
+  border-color: rgba(255, 255, 255, 0.02); }
+
+.navbar-default .navbar-toggle .icon-bar {
+  background-color: #fff; }
+
+.navbar-default .nav li {
+  margin-left: 5px; }
+
+.navbar-default .nav li a {
+  text-transform: uppercase;
+  font-weight: 300;
+  letter-spacing: 1px;
+  color: #fff;
+  font-size: 12px;
+  border: 2px solid transparent; }
+
+.navbar-default .nav li a:hover,
+.navbar-default .nav li a:focus {
+  color: #1cbac8; }
+
+.navbar-default .navbar-nav > .active > a {
+  border-radius: 0;
+  color: #1cbac8; }
+  .navbar-default .navbar-nav > .active > a:focus {
+    color: #1cbac8; }
+
+.navbar-default .navbar-nav > .active > a:hover,
+.navbar-default .navbar-nav > .active > a:focus {
+  color: #1cbac8; }
+
+@media (min-width: 768px) {
+  .navbar-default {
+    padding: 15px 0;
+    border: 0;
+    background: rgba(34, 34, 34, 0.5);
+    -webkit-transition: all .3s;
+    -moz-transition: all .3s;
+    -o-transition: all .3s;
+    transition: all .3s; }
+
+  .navbar-default .navbar-brand {
+    font-size: 40px;
+    color: #1cbac8;
+    -webkit-transition: all .3s;
+    -moz-transition: all .3s;
+    -o-transition: all .3s;
+    transition: all .3s; }
+
+  .navbar-default.navbar-bg {
+    padding: 10px 0;
+    background-color: #222; }
+
+  .navbar-default.navbar-bg .nav li a {
+    text-transform: uppercase;
+    font-weight: 300;
+    letter-spacing: 1px;
+    color: #fff;
+    font-size: 12px;
+    border: 2px solid transparent; }
+
+  .navbar-default.navbar-bg .nav li a:hover,
+  .navbar-default.navbar-bg .nav li a:focus {
+    background: transparent;
+    color: #1cbac8; }
+
+  .navbar-default.navbar-bg .navbar-toggle:hover,
+  .navbar-default.navbar-bg .navbar-toggle:focus {
+    color: #1cbac8; }
+
+  .navbar-default.navbar-bg .navbar-nav > .active > a {
+    color: #1cbac8;
+    background: transparent; }
+
+  .navbar-default.navbar-bg .navbar-nav > .active > a:hover,
+  .navbar-default.navbar-bg .navbar-nav > .active > a:focus {
+    color: #1cbac8;
+    color: #111; }
+
+  .navbar-default.navbar-bg .navbar-brand {
+    font-size: 1.5em; } }
+@media (max-width: 767px) {
+  .navbar-default .navbar-collapse {
+    background: #222; } }
+.preview-banner {
+  padding: 200px 0; }
+  .preview-banner h1 {
+    font-family: "Kaushan Script","Helvetica Neue",Helvetica,Arial,cursive !important;
+    font-size: 70px;
+    line-height: 70px;
+    font-weight: 700;
+    margin-bottom: 40px;
+    text-transform: none !important;
+    color: #1cbac8 !important; }
+  .preview-banner p {
+    margin-bottom: 50px;
+    font-size: 22px;
+    text-transform: uppercase; }
+  .preview-banner.white h1, .preview-banner.white p {
+    color: #fff; }
+  .preview-banner.primary h1, .preview-banner.primary p {
+    color: #1cbac8; }
+
+.call-to-action-2 h3 {
+  font-size: 52px;
+  text-transform: uppercase;
+  margin-bottom: 36px;
+  font-weight: 700; }
+  .call-to-action-2 h3 span {
+    color: #1cbac8;
+    text-transform: none;
+    font-family: "Kaushan Script","Helvetica Neue",Helvetica,Arial,cursive !important; }
+.call-to-action-2 p {
+  padding: 0 10%;
+  margin-bottom: 40px;
+  font-size: 16px; }
+.call-to-action-2.white h3, .call-to-action-2.white p {
+  color: #fff; }
+
+.feature-2 {
+  margin-bottom: 80px; }
+  .feature-2 .feature-icon i {
+    font-size: 45px;
+    width: 45px;
+    height: 45px;
+    line-height: 45px;
+    color: #1cbac8;
+    -webkit-transition: all 0.3s;
+    -o-transition: all 0.3s;
+    transition: all 0.3s; }
+    .feature-2 .feature-icon i:before {
+      font-size: 45px; }
+  .feature-2 .media-body {
+    padding-left: 10px; }
+    .feature-2 .media-body h3 {
+      font-size: 18px;
+      line-height: 24px;
+      margin-bottom: 15px;
+      text-transform: uppercase;
+      color: #000;
+      -webkit-transition: all 0.3s;
+      -o-transition: all 0.3s;
+      transition: all 0.3s; }
+  .feature-2.white .media-body {
+    color: #fff; }
+    .feature-2.white .media-body h3 {
+      color: #fff; }
+
+.product-showcase {
+  margin-bottom: 60px; }
+  .product-showcase p {
+    padding: 20px;
+    background: #222;
+    color: #fff;
+    text-transform: uppercase; }
+
+.copyright {
+  border-top: 1px solid #353535;
+  padding: 30px 0px;
+  margin-top: 50px; }
+  .copyright .copyright-text p {
+    color: #9b9b9b; }
+  .copyright .copyright-text a {
+    color: #1cbac8;
+    font-weight: 600; }
+
+.footer-minimal h3 {
+  font-family: "Kaushan Script","Helvetica Neue",Helvetica,Arial,cursive !important;
+  color: #fff;
+  text-transform: none;
+  margin-bottom: 30px; }
+.footer-minimal a {
+  color: #fff; }

@@ -1,0 +1,210 @@
+/*
+Theme Name: Bonding
+Description: Bonding is a Personal Portfolio Template. Its a full responsive theme built with Bootstrap.
+Version: 1.0
+Author: TheShahriyar
+Author URI: http://theshahriyar.com
+*/
+
+/**==========================================**/
+/** Table of Content
+/**==========================================**/
+/**
+
+** Banner & Slideshow
+** Feature
+** Timeline Styling
+** Portfolio
+** Animated Number
+** Progress Bar
+** Testimonial Style
+** Pricing Table
+** Latest News
+** Video Background
+** Contact Page Style
+** Copyright
+** Back to Top
+
+**/
+
+
+//------------------------------------
+// Imported File
+//------------------------------------
+
+@import 'variable';
+@import 'global-styles';
+@import 'navbar';
+
+
+
+
+//--------------------------------------
+// Start Banner Section
+//--------------------------------------
+.preview-banner {
+	padding: 200px 0;
+
+	h1 {
+		font-family: "Kaushan Script","Helvetica Neue",Helvetica,Arial,cursive !important;
+		font-size: 70px;
+		line-height: 70px;
+		font-weight: 700;
+		margin-bottom: 40px;
+		text-transform: none !important;
+		color: $brand-primary !important;
+	}
+
+	p {
+		margin-bottom: 50px;
+		font-size: 22px;
+		text-transform: uppercase;
+	}
+
+	&.white {
+		h1,p {
+			color: #fff;
+		}
+	}
+
+	&.primary {
+		h1,p {
+			color: $brand-primary;
+		}
+	}
+}
+
+
+
+//------------------------------------
+// Start Call to Action Section
+//------------------------------------
+
+.call-to-action-2 {
+	
+	h3 {
+		font-size: 52px;
+		text-transform: uppercase;
+		margin-bottom: 36px;
+		font-weight: 700;
+
+		span {
+			color: $brand-primary;
+			text-transform: none;
+			font-family: "Kaushan Script","Helvetica Neue",Helvetica,Arial,cursive !important;
+		}
+	}
+
+	p {
+		padding: 0 10%;
+		margin-bottom: 40px;
+		font-size: 16px;
+	}
+
+	&.white {
+		h3,p {
+			color: #fff;
+		}
+	}
+}
+
+
+
+
+//-------------------------------------
+// Start Feature Style Section
+//-------------------------------------
+
+
+.feature-2 {
+	margin-bottom: 80px;
+
+	.feature-icon {
+
+	    i {
+    	    font-size: 45px;
+		    width: 45px;
+		    height: 45px;
+		    line-height: 45px;
+		    color: $brand-primary;
+		    -webkit-transition: all 0.3s;
+		    -o-transition: all 0.3s;
+		    transition: all 0.3s;
+
+		    &:before {
+		    	font-size: 45px;
+		    }
+	    }
+	}
+
+	.media-body {
+		padding-left: 10px;
+
+		h3 {
+			font-size: 18px;
+			line-height: 24px;
+		    margin-bottom: 15px;
+		    text-transform: uppercase;
+		    color: #000;
+		    -webkit-transition: all 0.3s;
+		    -o-transition: all 0.3s;
+		    transition: all 0.3s;
+		}
+	}
+
+	&.white {
+		.media-body {
+			color: #fff;
+			h3 {
+				color: #fff;
+			}
+		}
+	}
+
+	
+}
+
+
+.product-showcase {
+	margin-bottom: 60px;
+
+	p {
+		padding: 20px;
+		background: #222;
+		color: #fff;
+		text-transform: uppercase;
+	}
+}
+
+
+.copyright {
+	border-top: 1px solid #353535;
+    padding: 30px 0px;
+    margin-top: 50px;
+
+    .copyright-text {
+    	p {
+    		color: #9b9b9b;
+    	}
+    	a {
+    		color: $brand-primary;
+    		font-weight: 600;
+    	}
+    }
+}
+
+.footer-minimal {
+	h3 {
+		font-family: "Kaushan Script","Helvetica Neue",Helvetica,Arial,cursive !important;
+		color: #fff;
+		text-transform: none;
+		margin-bottom: 30px;
+	}
+
+	a {
+		color: #fff;
+	}
+}
+
+
+
