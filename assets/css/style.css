@@ -561,7 +561,9 @@ blockquote {
   font-family: "Kaushan Script","Helvetica Neue",Helvetica,Arial,cursive !important;
   color: #fff;
   text-transform: none;
-  margin-bottom: 30px; }
+  margin-bottom: 30px;
+  font-weight: normal; }
 
 .footer-minimal a {
-  color: #fff; }
+  color: #fff;
+  font-family: "Kaushan Script","Helvetica Neue",Helvetica,Arial,cursive !important; }
