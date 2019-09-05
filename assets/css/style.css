@@ -444,19 +444,34 @@ blockquote {
     background: #222; } }
 
 .preview-banner {
-  padding: 200px 0; }
+  height: 100vh;
+  display: -webkit-box;
+  display: -ms-flexbox;
+  display: flex;
+  -webkit-box-orient: vertical;
+  -webkit-box-direction: normal;
+  -ms-flex-direction: column;
+  flex-direction: column;
+  -webkit-box-pack: center;
+  -ms-flex-pack: center;
+  justify-content: center;
+  -webkit-box-align: center;
+  -ms-flex-align: center;
+  align-items: center; }
   .preview-banner h1 {
     font-family: "Kaushan Script","Helvetica Neue",Helvetica,Arial,cursive !important;
     font-size: 70px;
-    line-height: 70px;
+    line-height: 90px;
     font-weight: 700;
     margin-bottom: 40px;
     text-transform: none !important;
     color: #1cbac8 !important; }
-  .preview-banner p {
+  .preview-banner h4 {
     margin-bottom: 50px;
     font-size: 22px;
-    text-transform: uppercase; }
+    text-transform: none;
+    color: #fff;
+    font-weight: normal; }
   .preview-banner.white h1, .preview-banner.white p {
     color: #fff; }
   .preview-banner.primary h1, .preview-banner.primary p {
@@ -470,7 +485,8 @@ blockquote {
 
 .about-section .social-links {
   text-align: center;
-  margin-top: 20px; }
+  margin-top: 20px;
+  margin-bottom: 30px; }
   .about-section .social-links li {
     display: inline-block;
     margin-right: 25px; }
@@ -540,12 +556,22 @@ blockquote {
       color: #fff; }
 
 .product-showcase {
-  margin-bottom: 60px; }
-  .product-showcase p {
-    padding: 20px;
-    background: #222;
-    color: #fff;
-    text-transform: uppercase; }
+  margin-bottom: 30px; }
+  .product-showcase img {
+    width: 100%; }
+  .product-showcase .project-details {
+    border: 1px solid #ccc;
+    border-top: 0;
+    padding: 15px; }
+    .product-showcase .project-details li {
+      display: inline-block;
+      margin-right: 10px;
+      margin-bottom: 10px;
+      color: #333; }
+      .product-showcase .project-details li:after {
+        content: ","; }
+      .product-showcase .project-details li:last-child:after {
+        content: ""; }
 
 .copyright {
   border-top: 1px solid #353535;

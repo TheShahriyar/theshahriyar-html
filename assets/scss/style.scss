@@ -13,22 +13,28 @@
 // Start Banner Section
 //--------------------------------------
 .preview-banner {
-	padding: 200px 0;
+	height: 100vh;
+  display: flex;
+  flex-direction: column;
+  justify-content: center;
+  align-items: center;
 
 	h1 {
 		font-family: "Kaushan Script","Helvetica Neue",Helvetica,Arial,cursive !important;
 		font-size: 70px;
-		line-height: 70px;
+		line-height: 90px;
 		font-weight: 700;
 		margin-bottom: 40px;
 		text-transform: none !important;
 		color: $brand-primary !important;
 	}
 
-	p {
+	h4 {
 		margin-bottom: 50px;
 		font-size: 22px;
-		text-transform: uppercase;
+		text-transform: none;
+		color: #fff;
+		font-weight: normal;
 	}
 
 	&.white {
@@ -60,6 +66,7 @@
 	.social-links {
 		text-align: center;
 		margin-top: 20px;
+		margin-bottom: 30px;
 
 		li {
 			display: inline-block;
@@ -186,13 +193,35 @@
 
 
 .product-showcase {
-	margin-bottom: 60px;
+	margin-bottom: 30px;
 
-	p {
-		padding: 20px;
-		background: #222;
-		color: #fff;
-		text-transform: uppercase;
+	img {
+		width: 100%;
+	}
+
+	.project-details {
+		border: 1px solid #ccc;
+		border-top: 0;
+		padding: 15px;
+		
+		
+
+		li {
+			display: inline-block;
+			margin-right: 10px;
+			margin-bottom: 10px;
+			color: #333;
+
+			&:after {
+				content: ",";
+			}
+
+			&:last-child {
+				&:after {
+					content: "";
+				}
+			}
+		}
 	}
 }
 
