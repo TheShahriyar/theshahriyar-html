@@ -116,6 +116,12 @@ hr {
   -o-transition: all 0.3s;
   transition: all 0.3s; }
 
+.btn:focus {
+  outline: 0;
+  box-shadow: none;
+  border: 0;
+}
+
 .btn-primary {
   color: #ffffff;
   background: transparent;
@@ -556,11 +562,11 @@ blockquote {
       color: #fff; }
 
 .product-showcase {
-  margin-bottom: 30px; }
+  margin-bottom: 30px;
+  border: 1px solid #ccc; }
   .product-showcase img {
     width: 100%; }
   .product-showcase .project-details {
-    border: 1px solid #ccc;
     border-top: 0;
     padding: 15px; }
     .product-showcase .project-details li {
